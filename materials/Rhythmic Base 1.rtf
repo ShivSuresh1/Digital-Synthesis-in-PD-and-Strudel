@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 stack(\
+  note(\
+    seq(\
+      [0, 2, 4, 7, 9, 7, 4, 2], \
+      [0, 3, 5, 8, 7, 5, 3, 0]\
+    )\
+    .segment(8)\
+    .scale("e1:minor:pentatonic")\
+    .slow(1)\
+  )\
+  .s("sine")\
+  .gain(0.7)\
+  .legato(0.9)            // Smooth legato\
+  .delay(0.15)            // Subtle delay for depth\
+  .room(1.0)              // Room reverb\
+  .lpf(perlin.range(1000, 4000).slow(12))  // Evolving low-pass filter\
+  .hpf(perlin.range(50, 200).slow(10))     // Slow high-pass modulation\
+  .pan(perlin.range(-0.7, 0.7).slow(18))   // Wide stereo movement\
+  .degradeBy(0.1)         // Slight digital degradation\
+  ._punchcard()\
+)\
+.gain(1)\
+.scope()\
+}
