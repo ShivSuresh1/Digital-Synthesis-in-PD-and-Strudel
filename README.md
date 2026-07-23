@@ -1,1 +1,1 @@
-Solo project made by digital synthesis in PD and Strudel
+Digital Synthesis Solo Performance project, developed using Pure Data PD and Strudel REPL. 
