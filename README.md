@@ -1,1 +1,1 @@
-Digital Synthesis Solo Performance project, developed using Pure Data PD and Strudel REPL. 
+Digital Synthesis Solo Performance project, developed using Pure Data PD and Strudel REPL. This project was developed as a part of COMP4350 Sound and Music Computing at the Australian National University
